@@ -1,23 +1,102 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-  }
-  
-  th, td {
-    padding: 8px;
-    width: 10px;
-    border: 1px solid #92eaea;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #D6EEEE;
-  }
+/* style.css */
 
-  caption {
-    color: black;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px black, 0 0 25px #D6EEEE, 0 0 5px #92eaea;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid #021526; 
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table.schedule th,
+table.schedule td {
+  border: 1px solid #021526;
+  padding: 15px;
+  text-align: center;
+  font-size: 1em;
+}
+
+table.schedule th {
+  background-color: #03346E;
+  color: #F3F7EC;
+  font-weight: bold;
+}
+
+.schedule td {
+  color: #313131;
+}
+
+.schedule tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.morning, .noon, .afternoon, .evening {
+  font-weight: bold;
+  color: #333;
+  background-color: #e0e0e0;
+}
+
+.lunch {
+  background-color: #ffedcc;
+  font-weight: bold;
+}
+
+.break {
+  background-color: #ffd1dc;
+  font-weight: bold;
+}
+
+.afternoon {
+  background-color: #d0e1ff;
+}
+
+.evening {
+  background-color: #cce5cc;
+}
+
+.schedule td[colspan="7"] {
+  font-weight: bold;
+  background-color: #f8f4f4;
+}
+
+.schedule td[rowspan] {
+  font-weight: bold;
+  background-color: #2C4E80;
+  color: #ffffff;
+}
+
+.schedule tbody td:hover {
+  background-color: #6EACDA; 
+  cursor: pointer; 
+  color: #333; 
+}

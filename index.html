@@ -1,113 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thời khóa biểu</title>
+    <title>Thời Gian Biểu Hằng Ngày</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=89470&format=png&color=000000">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <caption><b>Thời gian biểu của Bách Thiện nì</b></caption>
-        <tr>
-            <th>Buổi</th>
-            <th>Thứ 2</th>
-            <th>Thứ 3</th>
-            <th>Thứ 4</th>
-            <th>Thứ 5</th>
-            <th>Thứ 6</th>
-            <th>Thứ 7</th>
-            <th>Chủ nhật</th>
-        </tr>
-        <tr>
-            <td>7:00</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-            <td>Thức dậy</td>
-        </tr>
-        <tr>
-            <td>7:00 - 9:00</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-            <td>Sinh hoạt buổi sáng</td>
-        </tr>
-        <tr>
-            <td>9:00 - 11:00</td>
-            <td>Nấu ăn</td>
-            <td>Nấu ăn</td>
-            <td>Nấu ăn</td>
-            <td>Nấu ăn</td>
-            <td>Nấu ăn</td>
-            <td>Nấu ăn</td>
-            <td>Đi chơi với bạn bè</td>
-        </tr>
-        <tr>
-            <td>11:30</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-            <td>Ăn trưa</td>
-        </tr>
-        <tr>
-            <td>11:30 - 13:00</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-            <td>Xem phim</td>
-        </tr>
-        <tr>
-            <td>13:00 - 18:00</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-            <td>Làm bài tập</td>
-        </tr>
-        <tr>
-            <td>18:00 - 19:45</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-            <td>Sinh hoạt buổi tối</td>
-        </tr>
-        <tr>
-            <td>19:45 - 23:00</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-            <td>Học bài mới (check bài tập)</td>
-        </tr>
-        <tr>
-            <td>00:00</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-            <td>Đi ngủ</td>
-        </tr>
-    </body>
+    <div class="container">
+        <h1>THỜI GIAN BIỂU HÀNG NGÀY</h1>
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>Buổi</th>
+                    <th>Thời gian</th>
+                    <th>Thứ 2</th>
+                    <th>Thứ 3</th>
+                    <th>Thứ 4</th>
+                    <th>Thứ 5</th>
+                    <th>Thứ 6</th>
+                    <th>Thứ 7</th>
+                    <th>Chủ Nhật</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sáng -->
+                <tr>
+                    <td rowspan="4" class="morning">SÁNG</td>
+                    <td>06:00</td>
+                    <td colspan="7">Thức dậy</td>
+                </tr>
+                <tr>
+                    <td>07:00</td>
+                    <td colspan="7">Ăn sáng</td>
+                </tr>
+                <tr>
+                    <td>08:30 - 10:30</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                    <td>Tự học</td>
+                </tr>
+                <tr>
+                    <td>10:30 - 11:30</td>
+                    <td>Nấu ăn</td>
+                    <td>Nấu ăn</td>
+                    <td>Nấu ăn</td>
+                    <td>Nấu ăn</td>
+                    <td>Nấu ăn</td>
+                    <td>Đi ăn</td>
+                    <td>Đi ăn</td>
+                </tr>
+                
+                <!-- Trưa -->
+                <tr>
+                    <td rowspan="2" class="noon">TRƯA</td>
+                    <td>11:30 - 12:00</td>
+                    <td colspan="7" class="lunch">Ăn trưa</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td colspan="7" class="lunch">Nghỉ trưa</td>
+                </tr>
+
+                <!-- Chiều -->
+                <tr>
+                    <td rowspan="3" class="afternoon">CHIỀU</td>
+                    <td>13:30 - 14:45</td>
+                    <td>Chơi game</td>
+                    <td>Xem phim</td>
+                    <td>Đọc truyện</td>
+                    <td>Xem phim</td>
+                    <td>Đọc truyện</td>
+                    <td>Đi chơi</td>
+                    <td>Đi chơi</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 16:00</td>
+                    <td>Đọc sách</td>
+                    <td>Đọc sách</td>
+                    <td>Đọc sách</td>
+                    <td>Đọc sách</td>
+                    <td>Đọc sách</td>
+                    <td>Đi chơi</td>
+                    <td>Đi chơi</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td colspan="7" class="afternoon">Vệ sinh cá nhân + Ăn tối</td>
+                </tr>
+                 <!-- Tối -->
+                <tr>
+                    <td rowspan="3" class="evening">TỐI</td>
+                    <td>18:00 - 21:00</td>
+                    <td>Đi học</td>
+                    <td>Tự học</td>
+                    <td>Đi học</td>
+                    <td>Tự học</td>
+                    <td>Đi học</td>
+                    <td>Đi chơi</td>
+                    <td>Đi chơi</td>
+                </tr>
+                <tr>
+                    <td>21:00 - 22:00</td>
+                    <td colspan="7" class="break">Giải trí</td>
+                </tr>
+                <tr>
+                    <td>23:00</td>
+                    <td colspan="7" class="break">Ngủ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
 </html>
